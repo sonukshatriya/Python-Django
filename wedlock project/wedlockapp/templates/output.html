@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+</head>
+<body>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Profile Seeking For</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Religion</th>
+                <th>Mother Tongue</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in formate %}
+            <tr>
+                <td>{{ data.email }}</td>
+                <td>{{ data.password }}</td>
+                <td>{{ data.profile_seeking_for }}</td>
+                <td>{{ data.first_name }}</td>
+                <td>{{ data.last_name }}</td>
+                <td>{{ data.gender }}</td>
+                <td>{{ data.religion }}</td>
+                <td>{{ data.mother_tongue }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
